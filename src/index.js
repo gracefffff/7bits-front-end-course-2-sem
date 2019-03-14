@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter,Route } from 'react-router-dom';
+import Base from './layouts/base/Base';
+import Home from './pages/home/Home';
+
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ToDo from "./pages/toDo/ToDo";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <Base>
+            <Route exact path = '/' component = {Home}/>
+            <Route path = '/todo' component = {ToDo}/>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+        </Base>
+    </BrowserRouter>,
+
+    document.getElementById('root')
+);

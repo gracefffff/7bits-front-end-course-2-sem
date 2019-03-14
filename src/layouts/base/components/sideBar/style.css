@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.side-bar {
+    width: 100%;
+}
+.side-bar-list {
+    list-style-type:none;
+
+}
+.side-bar__link {
+    display:block;
+    margin: 0 0 28px 0;
+    font-size: 18px;
+    color: #979797;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration:none;
+    list-style-type:none;
+    background: left top no-repeat;
+    background-size:20px 20px;
+    padding-left:30px;
+}
+
+
+.side-bar__link_active {
+    color: #78c2f5;
+}
+.side-bar__todo {
+background-image: url("./icons/todo_gray@2x.png");
+}
+.side-bar__todo-active{
+    background-image: url("./icons/todo_blue@2x.png");
+
+}
+.side-bar__done {
+    background-image: url("./icons/done_gray@2x.png");
+}
+.side-bar__done-active{
+    background-image: url("./icons/done_blue@2x.png");
+
+}

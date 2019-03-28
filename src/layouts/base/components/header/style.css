@@ -1,6 +1,7 @@
 .header {
-    background-color: #96efc0;
+    /*background-color: #96efc0;*/
     font-family: Helvetica, sans-serif;
+    background: linear-gradient(to right, #96efc0, #73baff);
 }
 
 .header__content {

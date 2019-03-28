@@ -1,0 +1,30 @@
+.button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form__button {
+    width: 145px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    background-color: #bdbdbd;
+    position: relative;
+    padding-right: 2px;
+    transition: 0.3s;
+}
+
+.form__button:after {
+    width:100%;
+    height:100%;
+
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 20px;
+    background: url("./icon/plus.svg") no-repeat;
+}

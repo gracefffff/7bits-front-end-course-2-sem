@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.form-field {
+    border-width: 0 0 2px;
+    font-size:15px;
+    width:400px;
+    outline:none;
+    border-color:#50d5ad;
+    margin-bottom: 20px;
+    font-family: "Roboto", serif;
+}
+.form-field::placeholder {
+    color:#b0b0b0;
+
+}

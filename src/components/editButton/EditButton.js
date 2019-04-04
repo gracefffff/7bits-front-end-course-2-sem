@@ -4,10 +4,10 @@ import './style.css';
 
 export default class EditButton extends React.Component {
     render() {
-        const {value, type, disabled,id} = this.props;
+        const {value, type, disabled,id, onClick} = this.props;
 
         return (
-            <button className={'button button__edit'} type={type} disabled={disabled} id={id}>
+            <button className={'button button__edit'} type={type} disabled={disabled} id={id} onClick ={onClick}>
                 {value}
             </button>
         );
@@ -20,12 +20,15 @@ EditButton.propTypes = {
     type: PropTypes.string,
     disabled: PropTypes.bool,
     id:PropTypes.string,
+    onClick:PropTypes.func
+
 };
 
 EditButton.defaultProps = {
     value: '',
     type: 'button',
     disabled: false,
-    id: ''
+    id: '',
+    onClick:()=>{}
 
 };

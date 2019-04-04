@@ -5,11 +5,11 @@ import './style.css';
 export default class StatusButton extends React.Component {
     render() {
 
-        const {value, type, disabled,id, name} = this.props;
+        const {value, type, disabled,id, name, onClick} = this.props;
 
 
         return (
-            <button className={`button button__${name} `} type={type} disabled={disabled} id={id}>
+            <button className={`button button__${name} `} type={type} disabled={disabled} id={id} onClick={onClick}>
                 {value}
             </button>
         );
@@ -22,7 +22,8 @@ StatusButton.propTypes = {
     type: PropTypes.string,
     disabled: PropTypes.bool,
     id:PropTypes.string,
-    name:PropTypes.string
+    name:PropTypes.string,
+    onClick:PropTypes.func
 };
 
 StatusButton.defaultProps = {
@@ -30,6 +31,7 @@ StatusButton.defaultProps = {
     type: 'button',
     disabled: false,
     id: '',
-    name:''
+    name:'',
+    onClick:()=>{}
 
 };

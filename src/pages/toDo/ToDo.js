@@ -12,11 +12,12 @@ import list from './list';
 import './style.css';
 
 export default class ToDo extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
             value : '',
-            itemList: [...list.data]
+            itemList: [...list.data],
 
 
         };
@@ -33,13 +34,15 @@ export default class ToDo extends React.Component {
 
             value:'',
             itemList: [
-                {status:"inbox",
+                {id: getNextId(),
+                    status:"inbox",
                 taskName: `${this.state.value}`},
                 ...this.state.itemList
             ]
 
         })
     };
+
 
 
     renderList = (tasks) => {
@@ -78,3 +81,16 @@ export default class ToDo extends React.Component {
         );
     };
 };
+// function guid() {
+//     function _p8(s) {
+//         var p = (Math.random().toString(16)+"000000000").substr(2,8);
+//         return s ? "-" + p.substr(0,4) + "-" + p.substr(4,4) : p ;
+//     }
+//     return _p8() + _p8(true) + _p8(true) + _p8();
+// }_
+
+function getNextId() {
+    const randId = Math.random().toString();
+    return `taskID_${randId.substring(2, randId.length)}`;
+
+}

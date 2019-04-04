@@ -10,7 +10,9 @@ export default class Done extends React.Component {
     renderList = () => {
         return list.data.map((item, index) => {
             return (
-                <Article key={index} taskName={item.taskName} />
+                <div className="box-done">
+                <Article status={item.status} key={index} taskName={item.taskName} />
+                </div>
             );
         });
     };

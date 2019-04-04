@@ -1,0 +1,23 @@
+
+.button__inbox {
+    background: url("./images/О.svg") no-repeat;
+    width:15px;
+    height:15px;
+    display: inline-block;
+
+
+
+}
+.button__done {
+    background: url("./images/done_task_gray.svg") no-repeat;
+    width:15px;
+    height:15px;
+    display: inline-block;
+
+
+
+}
+
+.button__inbox:hover {
+    background: url("./images/O_hover.svg") no-repeat;
+}

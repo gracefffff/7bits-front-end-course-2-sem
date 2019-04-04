@@ -1,13 +1,17 @@
 {
   "data": [
     {
+      "id":"1",
+      "status":"inbox",
 
       "taskName": "Покормить кошку"
     },
-    {
+    { "id":"2",
+      "status":"inbox",
       "taskName": "Сделать softskills"
     },
-    {
+    { "id":"3",
+      "status":"inbox",
       "taskName": "Убраться"
     }
   ]

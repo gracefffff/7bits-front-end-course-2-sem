@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter,Route } from 'react-router-dom';
 import Base from './layouts/base/Base';
-import Done from './pages/home/Done';
+import Done from './pages/done/Done';
 
 import './index.css';
 import ToDo from "./pages/toDo/ToDo";

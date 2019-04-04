@@ -3,7 +3,7 @@ import React from 'react';
 
 
 import Article from '../../components/article/Article';
-import Button from '../../components/button/Button';
+import Button from '../../components/createButton/CreateButton';
 import FormField from '../../components/formField/FormField';
 
 import list from './list';
@@ -33,7 +33,8 @@ export default class ToDo extends React.Component {
 
             value:'',
             itemList: [
-                {"taskName": `${this.state.value}`},
+                {status:"inbox",
+                taskName: `${this.state.value}`},
                 ...this.state.itemList
             ]
 
@@ -41,10 +42,10 @@ export default class ToDo extends React.Component {
     };
 
 
-    renderList = (lol) => {
-        return lol.map((item, index) => {
+    renderList = (tasks) => {
+        return tasks.map((item, index) => {
             return (
-                <Article key={index} taskName={item.taskName} />
+                <Article key={index} taskName={item.taskName} status={item.status} id={item.id}/>
             );
         });
     };

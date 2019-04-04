@@ -1,0 +1,13 @@
+
+.button__edit {
+    background: url("./images/pencil.svg") no-repeat;
+    width:15px;
+    height:15px;
+    margin-left:10%;
+    display: inline-block;
+
+
+}
+.button__edit:hover {
+    background: url("./images/pencil_blue.svg") no-repeat;
+}

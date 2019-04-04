@@ -1,0 +1,13 @@
+
+.button__delete {
+    background: url("./images/delete.svg") no-repeat;
+    width:10px;
+    height:15px;
+    margin: 15%;
+    display: inline-block;
+
+
+}
+.button__delete:hover {
+    background: url("./images/delete_red.svg") no-repeat;
+}
